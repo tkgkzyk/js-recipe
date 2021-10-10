@@ -1,9 +1,9 @@
-/*const inputElement = document.getElementById("input-todo")
-  const container = document.getElementById("cards-container")
-  const addButton = document.getElementById("add-button")
+const inputElement = document.getElementById("input-todo")
+const container = document.getElementById("cards-container")
+const addButton = document.getElementById("add-button")
 
-  // 追加ボタンを押したら
-  addButton.onclick = function() {
+// 追加ボタンを押したら
+/*addButton.onclick = function() {
   // 入力欄の値（テキスト）をとりだして、 text にいれる
   const text = inputElement.value
 
@@ -34,10 +34,6 @@
   // 入力欄を空にする
   inputElement.value = ""
 }*/
-
-const inputElement = document.getElementById("input-todo")
-const container = document.getElementById("cards-container")
-const addButton = document.getElementById("add-button")
 
 // 追加ボタンを押したときの処理を登録
 addButton.onclick = function() {
