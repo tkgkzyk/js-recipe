@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <p>
+        私の飼っているペットは？
+      </p>
+    </div>
+    <button id="dog">犬</button>
+    <button id="cat">猫</button>
+    <button id="hedgehog">ハリネズミ</button>
+    <div id="answer"></div>
+  </body>
+  <script>
+    const dog = document.getElementById("dog")
+    const cat = document.getElementById("cat")
+    const hedgehog = document.getElementById("hedgehog")
+    const answer = document.getElementById("answer")
+    dog.onclick = function() {
+      answer.textContent = "正解！"
+    }
+    cat.onclick = function() {
+      answer.textContent = "違うよ！"
+    }
+    hedgehog.onclick = function() {
+      answer.textContent = "正解！"
+    }
+  </script>
+</html>
