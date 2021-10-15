@@ -32,16 +32,34 @@ addButton.onclick = function() {
   sakujo(memo, deleteButton)
 }
 
-const sakujo = function(memo, deleteButton) {
+//上の引数を再定義
+/*const sakujo = function(memo, deleteButton) {
   deleteButton.textContent = "削除"
   deleteButton.onclick = function() {
     memo.remove()
   }
 }
 
+//上の引数を再定義
 const tsuika = function(memo, deleteButton) {
   memo.textContent = memoInput.value
   memoContainer.append(memo)
   memo.append(deleteButton)
+  memoInput.value = ""
+}*/
+
+//上の引数を再定義
+const sakujo = function(m, d) {
+  d.textContent = "削除"
+  d.onclick = function() {
+    m.remove()
+  }
+}
+
+//上の引数を再定義
+const tsuika = function(m, d) {
+  m.textContent = memoInput.value
+  memoContainer.append(m)
+  m.append(d)
   memoInput.value = ""
 }
