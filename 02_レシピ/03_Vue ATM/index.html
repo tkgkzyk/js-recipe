@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VueATM</title>
+  </head>
+  <body>
+    <section id="app">
+        <h1>入力画面</h1>
+        <input type="number" v-model="kingaku"></input>
+        <div>入力額：{{ kingaku }}円</div>
+        <div><input type="button" value="入金" v-on:click="nyuukin"></input>
+        <input type="button" value="出金"　v-on:click="syutukin"></input></div>
+     <h1>口座残高 </h1>
+     <div>残高:{{ zandaka }}円</div>
+     <h1>取引記録</h1>
+     <div v-for="kiroku in kirokus">
+      <br> 日付:{{kiroku.date}}</br>
+      <br> 操作:{{kiroku.type}}</br>
+      <br> 金額:{{kiroku.money}}</br>
+     </div>
+    </section>
+      <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+      <script src="main.js"></script>
+    </body>
+    </html>
